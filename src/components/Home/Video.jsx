@@ -1,18 +1,18 @@
 import image from '../../assets/images/3.jpg'
 
-const Video = () => {
+
+const Video = ({video}) => {
+
     return (
         <div>
-            <a href="/">
-                <div className='p-2 justify-center shadow-md bg-white rounded-md'>
-                    <img src={image} alt="" className='w-68 sm:flex-shrink-0'/>
-                    <p className='pt-2 font-semibold leading-5'>#23 React Hooks Bangla - React useReducer hook Bangla</p>
-                    <div className='flex justify-between mt-3 pb-3 text-gray-500 text-sm'>
-                    <p>10 Questions</p>
-                    <p>Score : 10 / 10</p>
-                    </div>
+            <div className='p-2 justify-center shadow-md bg-white rounded-md'>
+                <img src={`http://img.youtube.com/vi/${video.youtubeID}/maxresdefault.jpg`} alt="" className='w-68 sm:flex-shrink-0'/>
+                <p className='pt-2 font-semibold leading-5'>{video.title}</p>
+                <div className='flex justify-between mt-3 pb-3 text-gray-500 text-sm'>
+                <p>{video.noq} Questions</p>
+                <p>Total points: {video.noq * 5}</p>
                 </div>
-            </a>
+            </div>
         </div>
     );
 };
