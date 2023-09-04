@@ -1,5 +1,3 @@
-import image from '../../assets/images/3.jpg'
-
 
 const Video = ({video}) => {
 

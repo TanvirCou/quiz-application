@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Video from "./Video";
-import useVideoList from "../Hooks/useVideoList";
+import useVideoList from "../../Hooks/useVideoList";
 import { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 

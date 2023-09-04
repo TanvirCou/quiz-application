@@ -1,4 +1,3 @@
-import React from 'react';
 import loginImage from '../../assets/images/login.svg'
 import LoginForm from './LoginForm';
 

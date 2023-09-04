@@ -1,6 +1,6 @@
 import { faAt, faLock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuth } from '../../Contexts/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -31,11 +31,11 @@ const LoginForm = () => {
     return (
         <form action="" className='p-6 mt-6' onSubmit={handleSubmit}>
             <div className='m-5 flex justify-end items-center'>
-            <input type="email" name="" placeholder='Enter email' required value={email} onChange={(e)=>setEmail(e.target.value)} className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-2 placeholder:font-medium focus:border-sky-500 focus:outline-sky-500'/>
+            <input type="email" name="" placeholder='Enter email' required value={email} onChange={(e)=>setEmail(e.target.value)} className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-2 placeholder:font-medium focus:border-sky-500 focus:outline-sky-500 p-2'/>
             <span className="absolute p-2"><FontAwesomeIcon icon={faAt}/></span>
             </div>
             <div className='m-5 flex justify-end items-center'>
-            <input type="password" name="" placeholder='Enter password' required value={password} onChange={(e)=>setPassword(e.target.value)} className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-2 placeholder:font-medium focus:outline-sky-500'/>
+            <input type="password" name="" placeholder='Enter password' required value={password} onChange={(e)=>setPassword(e.target.value)} className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-2 placeholder:font-medium focus:outline-sky-500 p-2'/>
             <span className="absolute p-2"><FontAwesomeIcon icon={faLock}/></span>
             </div>
             <div className='my-2 mx-5'>
@@ -47,7 +47,7 @@ const LoginForm = () => {
 
             </div>
             <div className='text-center text-gray-600 font-medium mt-2'>
-            Don't have an account? <Link to="/signup" className='text-blue-600'>SignUp</Link> instead.
+            Don&apos;t have an account? <Link to="/signup" className='text-blue-600'>SignUp</Link> instead.
             </div>
         </form>
     );

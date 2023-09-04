@@ -1,4 +1,3 @@
-import React from 'react';
 import successImage from '../../assets/images/success.png'
 
 const Summary = ({score, noq}) => {

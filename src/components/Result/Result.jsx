@@ -1,8 +1,7 @@
-import React from 'react';
 import Summary from './Summary';
 import Analysis from './Analysis';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import useAnswers from '../Hooks/useAnswers';
+import { useLocation, useParams } from 'react-router-dom';
+import useAnswers from '../../Hooks/useAnswers';
 import _ from 'lodash';
 
 const Result = () => {

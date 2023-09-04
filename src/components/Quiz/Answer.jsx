@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-key */
-import React from 'react';
 import AnswerCheckbox from './AnswerCheckbox';
 
 // eslint-disable-next-line react/prop-types

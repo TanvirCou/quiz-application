@@ -9,21 +9,21 @@ const Account = () => {
         <div className="text-blue-600 text-base font-medium flex pt-3 items-center">
             {currentUser ? (
                 <>
-                    <span className="pr-2"><FontAwesomeIcon icon={faUser}/></span>
+                    <span className="pr-2"><FontAwesomeIcon icon={faUser} /></span>
                     <span className="pr-2">{currentUser.displayName}</span>
-                    <span className="pr-6 cursor-pointer" onClick={logout}><FontAwesomeIcon icon={faRightFromBracket}/></span>
+                    <span className="pr-6 cursor-pointer" onClick={logout}><FontAwesomeIcon icon={faRightFromBracket} /></span>
                 </>
             ) : (
                 <>
-                    <Link to='/signup'> 
-                        <p>Signup</p> 
+                    <Link to='/signup'>
+                        <p>Signup</p>
                     </Link>
-                    <Link to='/login'> 
-                        <p className="pr-6 pl-2">Login</p> 
+                    <Link to='/login'>
+                        <p className="pr-6 pl-2">Login</p>
                     </Link>
                 </>
             )}
-        </div> 
+        </div>
     );
 };
 
